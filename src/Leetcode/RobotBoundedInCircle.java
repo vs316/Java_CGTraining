@@ -1,3 +1,5 @@
+package Leetcode;
+
 public class RobotBoundedInCircle  {
     public static  boolean isRobotBounded(String instructions) {
         // north = 0, east = 1, south = 2, west = 3
@@ -25,7 +27,7 @@ public class RobotBoundedInCircle  {
     }
 public static void main(String[] args){
   String instructions="GGLLGG";
-  isRobotBounded(instructions);
+    System.out.println(isRobotBounded(instructions));
 }
 }
 
