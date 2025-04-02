@@ -1,0 +1,7 @@
+@startuml
+actor Customer as Alice
+participant BillGenerator as Generator
+
+Alice -> Generator: generateBill(products)
+Generator --> Alice: "Total: $8.0"
+@enduml

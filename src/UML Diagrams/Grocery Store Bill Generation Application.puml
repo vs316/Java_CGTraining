@@ -1,0 +1,19 @@
+@startuml
+class Customer {
+    +name: String
+    +getOrders(): List<Order>
+}
+
+class Product {
+    +name: String
+    +price: double
+    +quantity: int
+}
+
+class BillGenerator {
+    +generateBill(customer: Customer): double
+}
+
+Customer "1" o-- "*" Product : "purchases"
+Customer --> BillGenerator : "uses"
+@enduml

@@ -1,0 +1,19 @@
+@startuml
+object John {
+    name = "John"
+    rollNumber = 101
+}
+
+object Maths {
+    name = "Maths"
+    marks = 90
+}
+
+object Science {
+    name = "Science"
+    marks = 85
+}
+
+John --> Maths : "enrolled"
+John --> Science : "enrolled"
+@enduml

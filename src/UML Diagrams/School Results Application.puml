@@ -1,0 +1,19 @@
+@startuml
+class Student {
+    +name: String
+    +rollNumber: int
+    +getSubjects(): List<Subject>
+}
+
+class Subject {
+    +name: String
+    +marks: int
+}
+
+class GradeCalculator {
+    +calculateGrade(student: Student): String
+}
+
+Student "1" o-- "*" Subject : "has"
+Student --> GradeCalculator : "uses"
+@enduml

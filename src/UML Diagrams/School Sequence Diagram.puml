@@ -1,0 +1,7 @@
+@startuml
+actor Student as John
+participant GradeCalculator as Calculator
+
+John -> Calculator: calculateGrade(subjects)
+Calculator --> John: "Grade: A"
+@enduml
